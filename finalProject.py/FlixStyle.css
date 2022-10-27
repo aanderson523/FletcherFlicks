@@ -1,0 +1,740 @@
+
+/* Header*/
+nav{
+    background-color: white;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+   
+
+}
+
+nav .menu{
+    display: flex;
+    list-style: none;
+    
+}
+
+nav .menu li a{
+    display: inline-block;
+    padding: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+    font-size: 1.5rem;
+
+}
+
+nav .menu li a:hover{
+    background-color: lightgray;
+    border-radius: 8px;
+
+}
+
+nav .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+nav .logo a:hover{
+    background-color: lightgray;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px 5px black;
+}
+
+.logo img{
+    border-radius: 30px;
+}
+
+
+
+
+nav .openMenu{ 
+    color: black;
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+
+}
+
+nav .menu .closeMenu , .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+
+}
+.fa-facebook:hover{
+    color: rgb(37, 47, 185);
+}
+
+.fa-twitter-square:hover{
+    color: rgb(37, 136, 185);
+
+}
+
+.fa-instagram-square:hover{
+    color: rgb(185, 37, 177);
+}
+
+.fa-google:hover{
+    color: rgb(184, 125, 37);
+}
+nav .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+@media(max-width:800px){
+    nav .menu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .menu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: lightcoral;
+
+    }
+    nav .openMenu{
+        display: block;
+
+    }
+    nav .menu li a:hover{
+        background-color: none;
+        color: lightblue;
+
+    }
+    .icons i{
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* end of header*/
+
+
+
+.banner{
+    min-height: 100vh;
+    background: linear-gradient rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    padding-bottom: 20px;
+
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 425px 425px;
+
+
+}
+
+.card-img{
+    background-image: url(fletcherFlicks.png);
+    border-radius: 85px;
+    margin-bottom: 15px;
+}
+
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 15px;
+}
+
+.card-content{
+    background: white;
+    height: 335px;
+    border-radius: 15px;
+    margin-bottom: 3px;
+
+}
+
+.card-content h3{
+    text-align: center;
+    color: black;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+
+}
+
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+form select, form input{
+    display: block; 
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    font-weight: 300;
+
+}
+
+form input[type = text], form input[type = number], form input:: placeholder, select{
+    color: white;
+}
+
+form input[type = submit]{
+    color: white;
+    background: rgb(80, 82, 82);
+    padding: 12px 0;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+form input[type = submit]:hover{
+    opacity: 0.9;
+
+}
+
+@media (max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+
+    }
+    card-img{
+        height: 330px;
+
+    }
+}
+
+
+.services{
+    display: block;
+    position: relative;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-title{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.services-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: -15px;
+
+}
+
+.title{
+    margin-left: 15px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    top: 26px;
+}
+
+.services-title h4 span{
+    color: grey;
+
+
+}
+.services-title h5{
+    margin-top: -10px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: 900;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ser-box a{
+    text-decoration: none;
+}
+
+.box{
+
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 33.333333%;
+
+}
+
+.ser-box{
+    margin-top: 75px;
+    padding-bottom: 30px;
+    padding: 0 60px;
+    min-height: 198px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 black;
+}
+
+.ser-box .icon{
+    margin-bottom: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.ser-box h4{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1;
+    color: #3c44a9;
+    margin-top: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
+
+.ser-box p{
+    color: grey;
+    line-height: 24px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ser-box:hover{
+    box-shadow: 0 0 25px gray;
+    cursor: pointer;
+    background-image: linear-gradient(-45deg black, grey 100%);
+
+}
+
+.ser-box:hover h4,
+.ser-box:hover p{
+    color: grey;
+
+}
+
+.services-box .box:nth-child(1) .ser-box:hover{
+    background-image: linear-gradient(-45deg, lightblue 0%,blue);
+
+}
+
+.services-box .box:nth-child(3) .ser-box:hover{
+    background-image: linear-gradient(-45deg, lightgreen 0%, green);
+}
+.services-box .box:nth-child(4) .ser-box:hover{
+    background-image: linear-gradient(-45deg, lightgrey 0%, grey);
+}
+.services-box .box:nth-child(2) .ser-box:hover{
+    background-image: linear-gradient(-45deg, lightcoral 0%, red);
+}
+
+.icon i{
+    font-size: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.holder{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card{
+    width: 80%;
+    max-width: 440px;
+    color: lightgray;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.2);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+
+}
+
+.card img{
+    width: 150px;
+    border-radius: 250px;
+
+}
+
+.card h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.card p{
+    font-size: 25px;
+    margin: 10px auto;
+    max-width: 330px;
+}
+
+.card .links a i{
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+
+.card .links a i:hover{
+    background: lightcoral;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background: white;
+    color: lightgreen;
+    border-radius: 35px;
+    margin: 30px 0 10px;
+}
+
+.btn:hover{
+    color: lightgreen;
+    margin: 35px;
+}
+
+/* image glass card display*/
+
+
+.hold{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 25px;
+    
+
+}
+
+
+.hold .card{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hold .card .content{
+    position: absolute;
+    bottom: -160px;
+    width: 200%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: bottom 0.5s;
+    transition-delay: 0.8s;
+    border-radius: 55px;
+}
+
+.hold .card:hover .content{
+    bottom: 0px;
+
+
+}
+
+.hold .card:hover .content .contentB h3{
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition-delay: 0.6s;
+
+
+}
+
+.hold .card:hover .content .contentB h3{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.hold .card:hover .content .contentB h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+
+}
+
+.hold .card .content .sci {
+   position: relative;
+   bottom: 10px;
+   display: flex;
+
+}
+
+.hold .card .content .sci li{
+    list-style: inside;
+    margin: 10px 30px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+    color: black;
+}
+
+.hold .card:hover .content .sci li{
+    transform: translateY(0px);
+    opacity: 1;
+    color: white;
+
+}
+
+.hold .card .content .sci li a {
+    color: white;
+    font-size: 24px;
+}
+
+.hold .card .imgb img{
+    border-radius: 5px;
+}
+
+.glass{
+    background: linear-gradient(135deg, rgba(255,255,255, 0.1)rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+
+}
+
+.newsletter .contanier{
+    padding-top: 0;
+    border-radius: 8px;
+}
+
+.newsletter-content{
+    background:linear-gradient(lightgreen, lightblue);
+    color: #fff;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 20px 20px 50px grey;
+}
+
+.newsletter .title{
+    text-align: center;
+}
+
+.form-control, .subscribe-btn{
+    font-size: 18px;
+    padding: 7px 10px;
+    border: none;
+    display: block;
+    outline: 0;
+
+}
+
+.form-control{
+    color: var(--blackRussian);
+    font-weight: 400;
+    padding: 16px 28px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.subscribe-btn{
+    background: linear-gradient(lightblue, lightgreen);
+    color: #fff;
+    border: 1.5px solid var(--greyWhite);
+    display: block;
+    padding: 10px 28px;
+    margin: 22px auto;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 20px 15px 60px;
+
+}
+
+.subscribe-btn:hover{
+    color: var(--pacificBlue);
+    border-color: var(--pacificBlue)
+}
+
+.circle-box{
+    border: 4px solid #fff;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 20px 20px 15px ;
+
+}
+
+.circle-box.circle-1{
+    top: -128px;
+    right: -100px;
+    
+}
+
+.circle-box.circle-2{
+    bottom: -150px;
+    left: -150px;
+}
+
+/*footer*/
+
+.footer{
+    text-align: center;
+    background: var(--blackRussian);
+}
+
+.footer .brand-name{
+    margin: 24px 0;
+
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--blackRussian);
+}
+
+.footer a:hover{
+    opacity: 0.7;
+}
+
+.footer ul li{
+    list-style: none;
+    padding: 2px 0;
+}
+
+.footer a, .footer p{
+    text-transform: capitalize;
+    font-size: 15px;
+    color:black;
+    font-weight: 500;
+    opacity: 0.9;
+
+
+}
+
+.footer h3{
+    text-transform: uppercase;
+    padding: 12px 0;
+    color: var(--greyWhite);
+
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons li{
+    margin: 5px;
+}
+
+
+footer {
+    text-align: center;
+    font-size: .70em;
+    font-style: italic;
+    padding: 1em;
+    background: white;
+
+}
+
+.head-body{
+    width: 80%;
+    max-width: 440px;
+    color: lightgray;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.2);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+
+}
+
+.head-body-img img{
+    border-radius: 35px;
+}
